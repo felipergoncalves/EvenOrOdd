@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background: #0E1525;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    height: 150px;
+}
+
+.button{
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    background: #0079f2;
+    color: white;
+    font-weight: 200;
+    font-size: 40px;
+    text-align: center;
+}
+
+.button:hover{
+    box-shadow: rgb(87, 171, 255) 0px 0px 48px 0px;
+    cursor: pointer;
+}
+
+.modal-header .btn-close{
+    background-color: #fff;
+}
+.modal-header .btn-close:focus{
+    background-color: #C7C5CA;
+}
+.modal-content{
+    background-color: #1C2333;
+    color: white;
+    border: solid 2px #004182;
+    border-radius: 8px;
+}
+
+.modal-footer{
+    border-top: solid 2px #004182;
+}
+
+.modal-header{
+    border-bottom: solid 2px #004182;
+}
+
+@media screen and (max-width: 330px){
+    .main{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 190px){
+    .button{
+        width: 100px;
+        font-weight: 200;
+        font-size: 20px;
+    }
+}

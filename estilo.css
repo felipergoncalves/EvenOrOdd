@@ -1,20 +1,11 @@
 body{
-    margin: 0;
     background: #0E1525;
-}
-.container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.main{
-    margin-top: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 50%;
-    height: 150px;
 }
 
 .button{
@@ -26,12 +17,14 @@ body{
     color: white;
     font-weight: 200;
     font-size: 40px;
-    text-align: center;
+    line-height: 0;
+    transition: 0.3s;
 }
 
 .button:hover{
     box-shadow: rgb(87, 171, 255) 0px 0px 48px 0px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .modal-header .btn-close{

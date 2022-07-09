@@ -1,7 +1,6 @@
 function consultaNum(){
     var num = Number(document.getElementById('recipient-name').value);
-    var total = num / 2;
-    var resultado = total % 2;
+    var resultado = num % 2;
 
     var resposta = document.getElementById('message-text');
 
@@ -12,13 +11,13 @@ function consultaNum(){
         if(resultado == 0){
             resultado = 'par';
             resposta.value = num + ' é ' + resultado;
-            console.log(resposta);
         }else{
             resultado = 'ímpar';
             resposta.value = num + ' é ' + resultado;
-            console.log(resposta);
         }
     }
+
+    num.addEventListener('click', limparCampos())
 }
 
 function limparCampos(){

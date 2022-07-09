@@ -12,11 +12,8 @@
     <title>Par ou ímpar</title>
 </head>
 <body>
-    <div class="container">
-        <div class="main">
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="button">Iniciar</button>
-        </div>
-    </div>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="button">Iniciar</button>
+
     <!--Modal-->
     <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -28,11 +25,11 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Digite um número" required>
+                            <input type="text" class="form-control" maxlength="10" id="recipient-name" placeholder="Digite um número" required>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Resposta</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <textarea style="resize:none" class="form-control" id="message-text"></textarea>
                         </div>
                     </form>
                 </div>
